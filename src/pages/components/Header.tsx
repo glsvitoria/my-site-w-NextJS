@@ -13,16 +13,16 @@ export function Header() {
 				</h1>
 				<ul className="flex gap-8 items-center text-light-header_color_font justify-end font-semibold">
 					<li>
-						<a href="#home">Home</a>
+						<a href="#home" className="hover:brightness-75 duration-200">Home</a>
 					</li>
 					<li>
-						<a href="#about">About</a>
+						<a href="#about" className="hover:brightness-75 duration-200">About</a>
 					</li>
 					<li>
-						<a href="#project">Projects</a>
+						<a href="#project" className="hover:brightness-75 duration-200">Projects</a>
 					</li>
 					<li>
-						<a href="#skill">Skill</a>
+						<a href="#skill" className="hover:brightness-75 duration-200">Skill</a>
 					</li>
 				</ul>
 				{/* <label htmlFor="switch" className="label_checkbox">
