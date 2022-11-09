@@ -1,12 +1,11 @@
 import { GetStaticProps } from 'next'
-import { getPrismicClient } from '../services/prismic'
 import * as prismic from '@prismicio/client'
-import { AboutMe } from './components/AboutMe'
-import { Header } from './components/Header'
-import { HomePage } from './components/HomePage'
-import { Project, Projects } from './components/Projects/Projects'
-import { Skills } from './components/Skills'
-import { Footer } from './components/Footer'
+import { AboutMe } from '../components/AboutMe'
+import { Header } from '../components/Header'
+import { HomePage } from '../components/HomePage'
+import { Project, Projects } from '../components/Projects/Projects'
+import { Skills } from '../components/Skills'
+import { Footer } from '../components/Footer'
 
 interface HomeProps {
 	projects: {
