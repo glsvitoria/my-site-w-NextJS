@@ -7,19 +7,37 @@ interface ProjectItemProps {
 }
 
 export function ProjectItem({ project }: ProjectItemProps) {
-   console.log(project)
 	return (
-		<div>
+		<div className="mx-auto bg-light-card_bg/60 rounded-2xl w-[90%] shadow-2xl shadow-[#0000005b]">
 			<Image
 				src={project.data.repository_image.url}
 				alt={project.data.repository_image.alt}
 				width="200"
 				height="200"
+				className="w-full h-36 rounded-t-2xl mb-6"
 			/>
-         <h2>{project.data.project_title}</h2>
-         <p>{project.data.project_description[0].text}</p>
-         <a href={project.data.project_website_link.url} target="_blank">WEBSITE ONLINE</a>
-         <a href={project.data.project_repository_link.url} target="_blank">REPOSITORY</a>
+			<h2 className="text-2xl font-bold font-secundary text-black text-center mb-6">
+				{project.data.project_title}
+			</h2>
+			<p className="font-semibold text-sm font-sans text-light-cor6 text-center mx-auto max-w-[90%] mb-4 h-12">
+				{project.data.project_description[0].text}
+			</p>
+			<div className="flex flex-col items-center gap-4 mb-8">
+				<a
+					className="w-[80%] text-center py-1 bg-light-button font-secundary text-xl text-light-cor5 rounded-full duration-300 hover:bg-light-section_title hover:text-white"
+					href={project.data.project_website_link.url}
+					target="_blank"
+				>
+					VISIT WEBSITE
+				</a>
+				<a
+					className="w-[60%] text-center py-1 bg-light-button font-secundary text-xl text-light-cor5 rounded-full duration-300 hover:bg-light-section_title hover:text-white"
+					href={project.data.project_repository_link.url}
+					target="_blank"
+				>
+					REPOSITORY
+				</a>
+			</div>
 		</div>
 	)
 }

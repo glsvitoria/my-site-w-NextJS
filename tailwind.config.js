@@ -23,6 +23,7 @@ module.exports = {
 					home_subtitle: '#b2bcd1',
 					section_title: '#b4cf66',
 					transition_color: '#000',
+					button: 'rgb(211, 211, 211)',
 				},
 			},
 		},

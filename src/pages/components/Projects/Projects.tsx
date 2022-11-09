@@ -28,7 +28,7 @@ export function Projects({ projects }: ProjectsProps) {
 	return (
 		<section className="mt-24">
 			<SectionTitle title="PROJECTS" />
-			<div>
+			<div className='grid grid-cols-3 gap-8'>
 				{projects.map((project) => (
 					<ProjectItem key={project.id} project={project} />
 				))}
