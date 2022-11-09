@@ -5,6 +5,8 @@ import { AboutMe } from './components/AboutMe'
 import { Header } from './components/Header'
 import { HomePage } from './components/HomePage'
 import { Project, Projects } from './components/Projects/Projects'
+import { Skills } from './components/Skills'
+import { Footer } from './components/Footer'
 
 interface HomeProps {
 	projects: {
@@ -20,7 +22,9 @@ export default function Home({ projects }: HomeProps) {
 				<HomePage />
 				<AboutMe />
 				<Projects projects={projects.results} />
+            <Skills />
 			</main>
+         <Footer />
 		</>
 	)
 }

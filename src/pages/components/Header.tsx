@@ -1,6 +1,6 @@
 export function Header() {
 	return (
-		<header className="mb-24">
+		<header className="mb-24 fixed w-full top-0 bg-white">
 			<nav className="grid grid-cols-2 pr-[10vw] pl-[10vw] h-20 m-w-[1700px]">
 				<h1 className="flex items-center font-primary text-2xl font-bold text-light-header_color_font">
 					<span className="text-3xl pr-2 text-light-section_title">

@@ -26,7 +26,7 @@ interface ProjectsProps {
 
 export function Projects({ projects }: ProjectsProps) {
 	return (
-		<section className="mt-24">
+		<section className="mt-24" id='project'>
 			<SectionTitle title="PROJECTS" />
 			<div className='grid grid-cols-3 gap-8'>
 				{projects.map((project) => (

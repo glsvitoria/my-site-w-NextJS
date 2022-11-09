@@ -1,10 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
+import { SocialMedia } from './SocialMedia'
 
 export function HomePage() {
 	return (
-		<section className="grid grid-cols-5 mb-24 gap-12 items-center">
-			<img src="meu_avatar.svg" alt="Meu avatar" className="w-96 he-96 col-span-2" />
+		<section className="grid grid-cols-5 mt-24 mb-24 gap-12 items-center" id="home">
+			<img
+				src="meu_avatar.svg"
+				alt="Meu avatar"
+				className="w-96 he-96 col-span-2"
+			/>
 			<div className="border-[1px] border-light-cor1 rounded-3xl bg-light-description_bg p-16 col-span-3">
 				<p className="text-base text-light-home_subtitle font-bold">
 					Hello, I'm Guilherme Vitória
@@ -16,6 +21,7 @@ export function HomePage() {
 					Front End Developer looking for new knowledge, challenges and
 					opportunities to develop
 				</p>
+            <SocialMedia />
 			</div>
 		</section>
 	)

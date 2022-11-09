@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { SectionTitle } from './SectionTitle'
+import { SocialMedia } from './SocialMedia'
 
 export function AboutMe() {
 	return (
-		<section className="mb-24 grid grid-cols-5">
+		<section className="mb-24 grid grid-cols-5" id='about'>
 			<div className="col-span-3">
 				<SectionTitle title="ABOUT ME" />
 				<p className="text-xl leading-8 text-light-cor4">
@@ -21,6 +22,7 @@ export function AboutMe() {
 						DOWNLOAD CV
 					</a>
 				</button>
+            <SocialMedia />
 			</div>
 			<img src="meu_avatar_2.svg" alt="Meu avatar" className="col-span-2" />
 		</section>

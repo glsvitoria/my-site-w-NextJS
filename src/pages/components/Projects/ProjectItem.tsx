@@ -8,7 +8,7 @@ interface ProjectItemProps {
 
 export function ProjectItem({ project }: ProjectItemProps) {
 	return (
-		<div className="mx-auto bg-light-card_bg/60 rounded-2xl w-[90%] shadow-2xl shadow-[#0000005b]">
+		<div className="mx-auto bg-light-card_bg/40 rounded-2xl w-[90%] shadow-xl shadow-[#0000002f]">
 			<Image
 				src={project.data.repository_image.url}
 				alt={project.data.repository_image.alt}
