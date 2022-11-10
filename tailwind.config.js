@@ -26,6 +26,12 @@ module.exports = {
 					button: 'rgb(211, 211, 211)',
 				},
 			},
+			keyframes: {
+				mobileMenu: {
+					'0%': { left: '100vw' },
+					'100%': { left: '0' },
+				},
+			},
 		},
 	},
 	plugins: [],

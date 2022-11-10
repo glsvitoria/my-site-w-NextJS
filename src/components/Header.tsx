@@ -1,4 +1,7 @@
-export function Header() {
+import { List } from 'phosphor-react'
+import { MobileMenuValue } from './MobileMenu'
+
+export function Header({ isValue, setValue }: MobileMenuValue) {
 	return (
 		<header className="mb-24 fixed w-full top-0 bg-white">
 			<nav className="grid grid-cols-2 pr-[10vw] pl-[10vw] h-20 m-w-[1700px]">
@@ -11,23 +14,37 @@ export function Header() {
 						{'/>'}
 					</span>
 				</h1>
-				<ul className="flex gap-8 items-center text-light-header_color_font justify-end font-semibold">
+				<ul className="sm:flex gap-8 items-center text-light-header_color_font justify-end font-semibold hidden">
 					<li>
-						<a href="#home" className="hover:brightness-75 duration-200">Home</a>
+						<a href="#home" className="hover:brightness-75 duration-200">
+							Home
+						</a>
 					</li>
 					<li>
-						<a href="#about" className="hover:brightness-75 duration-200">About</a>
+						<a href="#about" className="hover:brightness-75 duration-200">
+							About
+						</a>
 					</li>
 					<li>
-						<a href="#project" className="hover:brightness-75 duration-200">Projects</a>
+						<a
+							href="#project"
+							className="hover:brightness-75 duration-200"
+						>
+							Projects
+						</a>
 					</li>
 					<li>
-						<a href="#skill" className="hover:brightness-75 duration-200">Skill</a>
+						<a href="#skill" className="hover:brightness-75 duration-200">
+							Skill
+						</a>
 					</li>
 				</ul>
-				{/* <label htmlFor="switch" className="label_checkbox">
-					<input type="checkbox" id="switch" />
-				</label> */}
+				<List
+					size={40}
+					color="#ac7793"
+					className="sm:hidden my-auto ml-auto text-end hover:cursor-pointer"
+					onClick={() => setValue(!isValue)}
+				/>
 			</nav>
 		</header>
 	)
