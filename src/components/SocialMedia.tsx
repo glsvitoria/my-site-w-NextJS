@@ -9,10 +9,9 @@ export function SocialMedia() {
 				rel="noreferrer"
 			>
 				<InstagramLogo
-					size={36}
 					color="#ac7793"
 					weight="bold"
-					className="hover:cursor-pointer hover:-translate-y-3 duration-300"
+					className="hover:cursor-pointer hover:-translate-y-3 duration-300 sm:text-4xl text-2xl"
 				/>
 			</a>
 
@@ -22,10 +21,9 @@ export function SocialMedia() {
 				rel="noreferrer"
 			>
 				<LinkedinLogo
-					size={36}
 					color="#ac7793"
 					weight="bold"
-					className="hover:cursor-pointer hover:-translate-y-3 duration-300"
+					className="hover:cursor-pointer hover:-translate-y-3 duration-300 sm:text-4xl text-2xl"
 				/>
 			</a>
 
@@ -35,10 +33,9 @@ export function SocialMedia() {
 				rel="noreferrer"
 			>
 				<GithubLogo
-					size={36}
 					color="#ac7793"
 					weight="bold"
-					className="hover:cursor-pointer hover:-translate-y-3 duration-300"
+					className="hover:cursor-pointer hover:-translate-y-3 duration-300 sm:text-4xl text-2xl"
 				/>
 			</a>
 		</div>

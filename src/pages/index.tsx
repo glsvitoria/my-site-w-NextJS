@@ -22,7 +22,7 @@ export default function Home({ projects }: HomeProps) {
 		<>
 			<Header isValue={isMobileMenu} setValue={setIsMobileMenu} />
 			<MobileMenu isValue={isMobileMenu} setValue={setIsMobileMenu} />
-			<main className="pr-[10vw] pl-[10vw] font-primary">
+			<main className="sm:px-[10vw] px-[7.5vw] font-primary max-w-screen-2xl mx-auto">
 				<HomePage />
 				<AboutMe />
 				<Projects projects={projects.results} />
