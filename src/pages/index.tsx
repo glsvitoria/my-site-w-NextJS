@@ -4,7 +4,7 @@ import { AboutMe } from '../components/AboutMe'
 import { Header } from '../components/Header'
 import { HomePage } from '../components/HomePage'
 import { Project, Projects } from '../components/Projects/Projects'
-import { Skills } from '../components/Skills'
+import { Skills } from '../components/Skills/Skills'
 import { Footer } from '../components/Footer'
 
 interface HomeProps {
